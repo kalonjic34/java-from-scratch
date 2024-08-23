@@ -23,7 +23,7 @@ public class Discount {
     }
 
     public static void calculateDiscount(double totalBill) {
-        double discount = totalBill * 0.20;
+        double discount = totalBill - (totalBill * 0.20);
         System.out.println("Congratulations! You have received a 20% discount. Your new bill amount is: $" + discount);
     }
 }
