@@ -4,9 +4,8 @@ public class ReturnValues {
     public static void main(String[] args) {
         double area1 = calculateArea(2.3, 3.6);
         printArea(2.3, 3.6, area1);
-
-        String englishExplanation = explainArea("English");
-        System.out.println(englishExplanation);
+        String englishExplaination = explainArea("English");
+        System.out.println(englishExplaination);
     }
 
     public static double calculateArea(double length, double width) {
@@ -18,7 +17,6 @@ public class ReturnValues {
         return area;
     }
 
-    // case "Italian"
     public static String explainArea(String language) {
         switch (language) {
             case "English":
@@ -29,12 +27,13 @@ public class ReturnValues {
                 return "area es igual a largo * ancho";
             default:
                 return "Language not available";
+
         }
     }
 
     public static void printArea(double length, double width, double area) {
         System.out.println(
-                "A rectangle with a length of " + length + " and a width of " + width + " has a area of " + area);
+                "A rectangle with a length of " + length + " and a width of " + width + " has an area of " + area);
     }
 
 }
