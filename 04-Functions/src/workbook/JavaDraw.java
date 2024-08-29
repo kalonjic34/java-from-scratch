@@ -1,4 +1,4 @@
-package io.github.jiangdequan;
+package workbook;
 
 import java.util.Scanner;
 

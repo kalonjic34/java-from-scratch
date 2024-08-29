@@ -1,4 +1,4 @@
-package io.github.jiangdequan;
+package workbook;
 
 public class Detention {
     public static void main(String[] args) {

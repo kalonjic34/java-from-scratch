@@ -1,4 +1,4 @@
-package io.github.jiangdequan;
+package section4;
 
 public class DocComments {
     public static void main(String[] args) {
