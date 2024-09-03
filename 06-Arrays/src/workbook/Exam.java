@@ -2,15 +2,14 @@ package workbook;
 
 public class Exam {
     public static void main(String[] args) {
-        String[] seats = { "Harry", "Neville", "Ron", "Hermione", "Seamus" };
+        // String[] seats = { "Harry", "Neville", "Ron", "Hermione", "Seamus" };
+        String[] students = { "Malfoy", "Crabbe", "Goyle", "Pansy", "Dean" };
 
         System.out.println("It's time to take your 5th year exams. Please, take your seats.\n");
 
-        System.out.println(seats[0] + ", you will take seat " + 0);
-        System.out.println(seats[1] + ", you wlll take seat " + 1);
-        System.out.println(seats[2] + ", you wlll take seat " + 2);
-        System.out.println(seats[3] + ", you wlll take seat " + 3);
-        System.out.println(seats[4] + ", you wlll take seat " + 4);
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i] + ", you will take a seat " + i);
+        }
 
     }
 }
