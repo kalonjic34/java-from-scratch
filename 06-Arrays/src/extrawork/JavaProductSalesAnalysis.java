@@ -10,6 +10,7 @@ public class JavaProductSalesAnalysis {
             totalSales += salesRecord[i];
             if (salesRecord[i] > highestSalesMonth) {
                 highestSalesMonth = salesRecord[i];
+                highestSalesMonth = i;
             }
         }
 
