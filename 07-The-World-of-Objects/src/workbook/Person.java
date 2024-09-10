@@ -73,4 +73,10 @@ public class Person {
     public void setPassport() {
         this.passport = new String[] { name, nationality, dateOfBirth };
     }
+
+    public String toString() {
+        return "Name: " + this.name + "\n" + "Nationality: " + this.nationality + "\n" + "Date of Birth: " + "\n"
+                + this.dateOfBirth + "\n" + "Seat Number: " + this.seatNumber + "\n" + "Passport"
+                + Arrays.toString(passport) + "\n";
+    }
 }
