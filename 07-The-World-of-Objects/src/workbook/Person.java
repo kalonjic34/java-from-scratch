@@ -1,5 +1,7 @@
 package workbook;
 
+import java.util.Arrays;
+
 public class Person {
     private String name;
     private String nationality;
@@ -12,6 +14,7 @@ public class Person {
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
+        this.passport = new String[3];
     }
 
     public Person(Person source) {
@@ -19,6 +22,7 @@ public class Person {
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;
         this.seatNumber = source.seatNumber;
+        this.passport = Arrays.copyOf(source.passport, source.passport.length);
     }
 
     public String getName() {
@@ -60,5 +64,13 @@ public class Person {
 
     public void chooseSeat() {
         seatNumber = (int) (Math.random() * 11 + 1);
+    }
+
+    public String[] getPassport() {
+        return Arrays.copyOf(passport, passport.length);
+    }
+
+    public void setPassport() {
+        this.passport = new String[] { name, nationality, dateOfBirth };
     }
 }
